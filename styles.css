@@ -3,10 +3,88 @@
   margin: 0;
   -webkit-box-sizing: 0;
           box-sizing: 0;
+  font-family: sans-serif;
 }
 
-body, html {
+body {
   width: 100vw;
   height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.container .screen {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container .screen .header-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clip: rect(auto, auto, auto, auto);
+}
+
+.container .screen .header {
+  pointer-events: none;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  right: 0;
+}
+
+.container .screen .header .square {
+  content: '';
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.container .screen .header .square-text {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.b-black {
+  background: black;
+}
+
+.b-white {
+  background: white;
+}
+
+.c-black {
+  color: black;
+}
+
+.c-white {
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */
