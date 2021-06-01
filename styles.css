@@ -21,6 +21,7 @@ body {
 .container .screen {
   width: 100%;
   height: 100%;
+  scroll-snap-align: start;
   position: relative;
 }
 
